@@ -5,7 +5,8 @@ class Egg {
     }
 }
 
-let page = (location.pathname).substring(4, location.pathname.indexOf('.'));
+// let page = (location.pathname).substring(4, location.pathname.indexOf('.'));
+let page = location.pathname;
 console.log('page: ' + page);
 
 const eggObjects = hatchEggs(); // egg objects
