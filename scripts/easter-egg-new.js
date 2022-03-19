@@ -9,7 +9,7 @@ let page = (location.pathname).substring(location.pathname.indexOf('.io/') + 4, 
 if (page == '/' || page == 'index') {
     page = 'index';
 } else {
-    page = page.substring(page.indexOf('pages/') + 6);
+    page = page.substring(page.indexOf('pages/') + 5);
 } 
 console.log('page: ' + page);
 
