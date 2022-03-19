@@ -6,7 +6,13 @@ class Egg {
 }
 
 let page = (location.pathname).substring(location.pathname.indexOf('.io/') + 4, location.pathname.indexOf('.html'));
+if (page == '/' || page == 'index') {
+    page = 'index';
+} else {
+    page = page.substring(page.indexOf('pages/') + 6);
+} 
 console.log('page: ' + page);
+
 
 const eggObjects = hatchEggs(); // egg objects
 
