@@ -6,6 +6,7 @@ class Egg {
 }
 
 let page = (location.pathname).substring(4, location.pathname.indexOf('.'));
+console.log('page: ' + page);
 
 const eggObjects = hatchEggs(); // egg objects
 
