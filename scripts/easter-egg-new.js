@@ -3,8 +3,6 @@ Easter eggs are found are the website, unlocking an unreleased song when all egg
 
 Eggs are tracked between pages, with data of their "found" status being stored in session storage.
 
-
-
 */
 
 class Egg {
@@ -14,13 +12,8 @@ class Egg {
     }
 }
 
-let page = (location.pathname).substring(location.pathname.indexOf('.io/') + 4, location.pathname.indexOf('.html'));
-if ((page == '/' || page == 'index') || page == '') {
-    page = 'index';
-} else {
-    page = page.substring(page.indexOf('pages/') + 5);
-} 
-console.log('page: ' + page);
+let page = getPage(location.pathname);
+console.log('You are located on the ' + page + ' page.');
 
 const eggObjects = hatchEggs(); // egg objects
 
@@ -34,6 +27,23 @@ refreshEggProgress(eggObjects);
 displayEggToPage(eggCarton, eggObjects);
 
 /* FUNCTIONS START HERE */
+
+// get page
+function getPage(path) {
+    let page = path.substring((path.indexOf('.io') + 3));
+
+    if ((page == '/' || page == 'index') || (page == '' || page == '/index.html')) {
+        page = 'index';
+    } else {
+        page = page.substring(page.indexOf('pages/') + 5, page.indexOf('.html'));
+        
+        if (page.charAt(0) == '/') {
+            page = page.substring(1);
+        }    
+    }
+    return page;
+}
+
 
 // create egg objects
 function hatchEggs() { 
