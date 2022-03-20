@@ -1,3 +1,12 @@
+/*
+Easter eggs are found are the website, unlocking an unreleased song when all eggs are found.
+
+Eggs are tracked between pages, with data of their "found" status being stored in session storage.
+
+
+
+*/
+
 class Egg {
     constructor(id, found) {
         this.id = id;
@@ -6,13 +15,12 @@ class Egg {
 }
 
 let page = (location.pathname).substring(location.pathname.indexOf('.io/') + 4, location.pathname.indexOf('.html'));
-if (page == '/' || page == 'index') {
+if ((page == '/' || page == 'index') || page == '') {
     page = 'index';
 } else {
     page = page.substring(page.indexOf('pages/') + 5);
 } 
 console.log('page: ' + page);
-
 
 const eggObjects = hatchEggs(); // egg objects
 
