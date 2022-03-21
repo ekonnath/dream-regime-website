@@ -57,13 +57,19 @@ a {
     margin-left: 4px;
     margin-right: 4px;
     text-align: center;
-    color: white;
+    /* color: white; */
 }
 
 /* all navbar items besides the logo */
 .nav-item {
     font-size: 18px;
     font-family: Sans Mateo;
+    color:rgba(255, 255, 255, 0.427)
+}
+
+.nav-item:hover {
+    transition: 0.45s;
+    color:rgb(255, 255, 255)
 }
 
 /* navbar logo */
@@ -73,6 +79,8 @@ a {
     width: 200px;
     margin-top: 2px;
     margin-right: 17px;
+    color: white;
+    animation: animate 5s linear infinte;
 }
 
 .footer {
@@ -115,6 +123,35 @@ hr {
 
 .egg-icon {
     cursor: pointer;
+}
+
+/* MEMBERS */
+
+.bio-box-container {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.bio-box {
+    border: 1.5px solid #fffdfd;
+    border-radius: 5px;
+    margin: 5px;
+    flex-basis: 250px; 
+}
+
+#member3 {
+    background: url(../images/drconcert-erik.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#member4 {
+    background: url(../images/drconcert-jason.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* VAULT FLEXCARDS */
