@@ -32,7 +32,9 @@ function getPage(path) {
     let page = path.substring((path.indexOf('.io') + 3));
     console.log("Pre page: " + page);
 
-    if ((page == '/' || page == 'index') || (page == '' || page == '/index.html')) {
+    if ((page == '/' || page == 'index') || 
+        (page == '' || page == '/index.html')
+        || page == 'ndex.html' ) {
         page = 'index';
     } else {
         page = page.substring(page.indexOf('pages/') + 5, page.indexOf('.html'));
