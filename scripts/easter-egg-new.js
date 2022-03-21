@@ -2,7 +2,6 @@
 Easter eggs are found are the website, unlocking an unreleased song when all eggs are found.
 
 Eggs are tracked between pages, with data of their "found" status being stored in session storage.
-
 */
 
 class Egg {
@@ -31,6 +30,7 @@ displayEggToPage(eggCarton, eggObjects);
 // get page
 function getPage(path) {
     let page = path.substring((path.indexOf('.io') + 3));
+    console.log("Pre page: " + page);
 
     if ((page == '/' || page == 'index') || (page == '' || page == '/index.html')) {
         page = 'index';
