@@ -138,8 +138,25 @@ hr {
 .bio-box {
     border: 1.5px solid #fffdfd;
     border-radius: 5px;
-    margin: 5px;
+    margin: 10px;
     flex-basis: 250px; 
+}
+
+.bio-box:hover {
+    transition: 0.2s;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.975);
+}
+
+#member1 {
+    background: url(../images/drconcert-aidan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#member2 {
+    background: url(../images/drconcert-colin.JPG);
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 #member3 {
