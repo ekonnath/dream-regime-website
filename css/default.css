@@ -74,13 +74,18 @@ a {
 
 /* navbar logo */
 .nav-logo {
+    transition: 0.5s;
     font-size: 36px;
     font-family: Daniel Jaques;
     width: 200px;
     margin-top: 2px;
     margin-right: 17px;
     color: white;
-    animation: animate 5s linear infinte;
+}
+
+.nav-logo:hover {
+    transition: 0.5s;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.393), 0 0 20px rgba(255, 255, 255, 0), 0 0 30px #fffefea3, 0 0 40px #ffffff66, 0 0 50px #ffffff12, 0 0 60px #ffffff66, 0 0 70px #ffffffb5;
 }
 
 .footer {
@@ -140,11 +145,58 @@ hr {
     border-radius: 5px;
     margin: 10px;
     flex-basis: 250px; 
+    cursor: pointer;
+    text-align: center;
+}
+
+.bio-box .faded-bio-box {
+    background-color: #666666;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    height: 100%;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+}
+
+.bio-box:hover .faded-bio-box {
+    opacity: 0.5;
+}
+
+.bio-box .faded-text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+
+.bio-box .faded-title {
+    font-size: 2.5em;
+    font-family: Sans Mateo;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+.bio-box:hover .faded-title,
+.bio-box:focus .faded-title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
 }
 
 .bio-box:hover {
     transition: 0.2s;
-    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.975);
+    box-shadow: 1.5px 2px 4px 0px rgba(255, 255, 255, 0.975);
 }
 
 #member1 {
