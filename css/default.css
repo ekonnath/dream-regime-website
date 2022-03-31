@@ -178,7 +178,7 @@ hr {
     padding-top: 20%; /* Text padding from top of card */
 }
 .bio-card:hover .bio-card-fade {
-    opacity: 0.8;
+    opacity: 0.5; /* Opacity of hover */
 }
 .bio-card .bio-card-text {
     -webkit-transition: all 300ms ease-out;
@@ -186,12 +186,16 @@ hr {
     -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
-    transform: translateY(30px);
-    -webkit-transform: translateY(30px);
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
 }
-.bio-card .bio-card-title {
-    font-size: 2.5em;
+/* .bio-card */ .bio-card-title {
+    font-size: 3em;
     text-transform: uppercase;
+    font-family: Daniel Jaques;
+    letter-spacing: 2.5px;
+    color: rgba(255, 255, 255, 0.851);
+    padding-top: 20%;
     opacity: 0;
     transition-delay: 0.2s;
     transition-duration: 0.3s;
