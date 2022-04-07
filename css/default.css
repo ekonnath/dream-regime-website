@@ -20,6 +20,9 @@
 
 main {
     height: 87vh;
+    width: auto;
+    display: grid;
+    justify-items: center;
 }
 
 body {
@@ -147,9 +150,10 @@ hr {
 
 /* VAULT FLEXCARDS */
 
-.vault-section {
-    width: 100vw;
-    height: 100vh;
+.vault-container {
+    margin: 100px 200px 200px;
+    height: 45%;
+    width: 45%;
     background-color: gray;
-    border-bottom: 3px solid black;
+
 }
