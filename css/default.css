@@ -160,7 +160,7 @@ hr {
     margin: 100px 200px 200px;
     /* display: grid; */
     height: 45%;
-    width: 45%;
+    width: 70%;
     /* background-color: gray; */
     color: white;
     justify-items: center;
@@ -190,13 +190,14 @@ hr {
     text-align: center;
     font-family: Sans Mateo;
     font-size: 2em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    color: rgba(255, 255, 255, 0.427);
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    color: rgba(255, 255, 255, 0.773);
 }
 
 .vault-menu-item:hover {
     color: white;
     transition: 0.5s;
     cursor: pointer;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.393), 0 0 20px rgba(255, 255, 255, 0), 0 0 30px #fffefea3, 0 0 40px #ffffff66, 0 0 50px #ffffff12, 0 0 60px #ffffff66, 0 0 70px #ffffffb5;
 }
