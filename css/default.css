@@ -32,7 +32,13 @@ body {
 }
 
 #members {
-    background-image: url(../images/vault.jpg);
+    background-image: url(../images/members.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vault {
+    background-image: url(../images/vault-background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -152,8 +158,45 @@ hr {
 
 .vault-container {
     margin: 100px 200px 200px;
+    /* display: grid; */
     height: 45%;
     width: 45%;
-    background-color: gray;
+    /* background-color: gray; */
+    color: white;
+    justify-items: center;
+}
 
+#vault-title-head {
+    text-align: center;
+    font-family: Daniel Jaques;
+    font-size: 10em;
+    letter-spacing: 0.15em;
+}
+
+#vault-title-sub {
+    text-align: center;
+    font-family: Sans Mateo;
+    font-size: 3em;
+}
+
+#vault-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.vault-menu-item {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-family: Sans Mateo;
+    font-size: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: rgba(255, 255, 255, 0.427);
+}
+
+.vault-menu-item:hover {
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
 }
