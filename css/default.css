@@ -115,6 +115,36 @@ a {
     justify-content: center;
 }
 
+.footer-container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.footer-item {
+    transition: 0.75s;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.427);
+    font-family: Daniel Jaques;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+.footer-item:hover {
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#contact {
+    text-align: left;
+    margin-top: 2.5%;
+}
+
+#shop {
+   text-align: right;
+   margin-top: 2.5%
+}
+
 hr {
     color: white;
 }
@@ -144,7 +174,8 @@ hr {
 }
 
 /* footer social media icon */
-.footer-item {
+.social-icon {
+    padding-top: 1%;
     margin-left: 8px;
     margin-right: 8px;
 }
