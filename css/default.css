@@ -226,6 +226,10 @@ hr {
     color: rgba(255, 255, 255, 0.773);
 }
 
+.vault-menu-item:visited, .vault-menu-item:active {
+    color: white;
+}
+
 .vault-menu-item:hover {
     color: white;
     transition: 0.5s;
