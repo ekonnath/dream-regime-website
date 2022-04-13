@@ -38,6 +38,13 @@ body {
 }
 
 #vault {
+    /* background-image: url(../images/vault-background.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: black;
+}
+
+#live-regime {
     background-image: url(../images/vault-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,11 +145,13 @@ a {
 #contact {
     text-align: left;
     margin-top: 2.5%;
+    margin-left: 25%;
 }
 
 #shop {
    text-align: right;
-   margin-top: 2.5%
+   margin-top: 2.5%;
+   margin-right: 25%;
 }
 
 hr {
@@ -188,7 +197,7 @@ hr {
 /* VAULT FLEXCARDS */
 
 .vault-container {
-    margin: 100px 200px 200px;
+    margin: 15% 200px 200px;
     /* display: grid; */
     height: 45%;
     width: 70%;
@@ -235,4 +244,35 @@ hr {
     transition: 0.5s;
     cursor: pointer;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.393), 0 0 20px rgba(255, 255, 255, 0), 0 0 30px #fffefea3, 0 0 40px #ffffff66, 0 0 50px #ffffff12, 0 0 60px #ffffff66, 0 0 70px #ffffffb5;
+}
+
+
+.scroll-div {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 50%;
+    
+    height: 95%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll-object {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+
+
+.live-regime-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 83vh;
+    width: 87vw;
+    border: solid 2px white;
+    border-radius: 20px;
 }
