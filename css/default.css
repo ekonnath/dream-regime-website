@@ -44,7 +44,7 @@ body {
     background-color: black;
 }
 
-#live-regime {
+#inquiry {
     background-image: url(../images/vault-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,24 +134,7 @@ a {
     font-family: Daniel Jaques;
     font-size: 1.5em;
     letter-spacing: 1.5px;
-}
-
-.footer-item:hover {
-    color: white;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#contact {
-    text-align: left;
-    margin-top: 2.5%;
-    margin-left: 25%;
-}
-
-#shop {
-   text-align: right;
-   margin-top: 2.5%;
-   margin-right: 25%;
+    justify-items: center;
 }
 
 hr {
@@ -192,6 +175,29 @@ hr {
 .egg-icon {
     cursor: pointer;
 }
+
+.inquiry-container {
+    margin: 5% 200px 200px;
+    display: grid;
+    height: 65%;
+    width: 70%;
+    background-color: rgba(128, 128, 128, 0.389);
+    color: white;
+    justify-items: center;
+}
+
+.inquiry-title {
+    font-family: Daniel Jaques;
+    font-size: 4em;
+    color: white;
+}
+
+.inquiry-subtitle {
+    font-family: Sans Mateo;
+    font-size: 2em;
+    color: white;
+}
+
 /* MEMBERS */
 
 /* VAULT FLEXCARDS */
