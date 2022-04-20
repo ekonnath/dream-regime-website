@@ -97,6 +97,8 @@ function refreshEggProgress() {
     const footerEgg5 = document.getElementById("footer-egg5");
     const footerEggs = [footerEgg1, footerEgg2, footerEgg3, footerEgg4, footerEgg5]; // IF MORE EGGS ARE ADDED, UPDATE HERE
 
+    let foundEggs = 0;
+
     for (let i = 0; i < footerEggs.length; i++) {
         
         if (footerEggs[i].firstChild) {
@@ -115,6 +117,7 @@ function refreshEggProgress() {
 
             footerEggs[i].appendChild(missingEgg); // If egg has been found
         } else if (eggObjects[i].found == true) {
+            foundEggs++;
             let foundEgg = document.createElement("img");
             if (page == 'index') {
                 foundEgg.setAttribute("src", "icons/record.png");
@@ -127,7 +130,12 @@ function refreshEggProgress() {
             footerEggs[i].appendChild(foundEgg);
         }
     }
-
+    if (foundEggs == 5) {
+        console.log("All Eggs found!");
+        const secretLink = document.getElementById("secret-link");
+        secretLink.setAttribute("href", "https://soundcloud.com/dream-regime");
+        secretLink.setAttribute("target", "_blank");
+    }
 }
 
 function displayEggToPage() {
