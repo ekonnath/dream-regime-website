@@ -202,6 +202,33 @@ hr {
 }
 
 /* MEMBERS */
+#members {
+    /* background-image: url(../images/members.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    max-height: 100vh;
+    margin:auto; */
+}
+
+.members-container {
+    scroll-snap-type: y mandatory;
+}
+.members-child {
+    scroll-snap-align: start;
+    min-width: 100vw;
+    min-height: 100vh; 
+}
+.members-child img{
+    min-width: 100vw;
+    height: 100vh;
+    /* width:100%;
+    height:100%;
+    max-width: 100vw;
+    max-height: 100vh; */
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
 
 /* VAULT FLEXCARDS */
 
