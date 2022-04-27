@@ -228,6 +228,71 @@ hr {
     background-repeat: no-repeat;
 }
 
+/*NEW MEMBERS CODE*/
+#mem {
+    background-color: black;
+}
+
+.mem-wrapper {
+    display: flex;
+    border-top: solid rgb(210, 210, 210) 2px;
+    border-left: solid rgb(210, 210, 210) 2px;
+    border-right: solid rgb(210, 210, 210) 2px;
+    border-radius: 2%;
+    margin-top: 6px;
+
+}
+
+.mem-container {
+    flex-basis: 100%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    border-radius: 2%;
+    
+}
+
+.mem-child {
+    scroll-snap-align: start;
+    border-bottom: 1px solid black;
+    font-size: 1.4rem;
+    color: rgba(rgb(0, 0, 0), .5);
+    background: rgb(0, 0, 0);
+    text-align: center;
+    scroll-snap-align: start;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100vh;
+    display: grid;
+    border-radius: 2%;
+    background-image: url(../images/vault-background.png);
+    background-size: cover;
+}
+
+.mem-child img {
+    transition: 1s;
+    margin-top: 45%;
+    width: 500px;
+    height: 315px;
+    border-radius: 2%;
+}
+
+.mem-child img:hover {
+    transition: 1s;
+    margin-top: 5vh;
+    width: 950px;
+    height: 598px;
+}
+
+
+.mem-base {
+    background-image: url(../images/members2.jpg);
+    background-size: cover;
+}
+
+
+
 /* VAULT FLEXCARDS */
 
 .vault-container {
