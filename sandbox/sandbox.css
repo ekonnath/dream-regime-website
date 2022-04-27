@@ -14,8 +14,8 @@
 
 .child {
     scroll-snap-align: start;
-    /* border-bottom: 1px solid white;
-    padding: 3rem; */
+    border-bottom: 1px solid black;
+    /* padding: 3rem; */
     font-size: 1.4rem;
     color: rgba(white, .5);
     background: lightgray;
@@ -24,10 +24,11 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 1000px; */
+    height: 1000px;
     display: grid;
     
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 500px 500px;
 
 }
 
