@@ -201,33 +201,6 @@ hr {
     color: white;
 }
 
-/* MEMBERS */
-#members {
-    /* background-image: url(../images/members.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    max-height: 100vh;
-    margin:auto; */
-}
-
-.members-container {
-    scroll-snap-type: y mandatory;
-}
-.members-child {
-    /* scroll-snap-align: start; */
-    scroll-snap-align: center;
-    min-width: 100vw;
-    min-height: 100vh; 
-    border-bottom: 2px white solid;
-}
-.members-child img{
-    min-width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    background-repeat: no-repeat;
-}
-
 /*NEW MEMBERS CODE*/
 #mem {
     background-color: black;
@@ -249,7 +222,6 @@ hr {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     border-radius: 2%;
-    
 }
 
 .mem-child {
@@ -270,81 +242,41 @@ hr {
     background-size: cover;
 }
 
-.mem-child img {
-    transition: 1s;
-    margin-top: 45%;
-    width: 500px;
-    height: 315px;
-    border-radius: 2%;
-}
-
-.mem-child img:hover {
-    transition: 1s;
-    margin-top: 5vh;
-    width: 950px;
-    height: 598px;
-}
-
-
 .mem-base {
     background-image: url(../images/members2.jpg);
     background-size: cover;
 }
 
 
+.mem-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+}
 
-/* VAULT FLEXCARDS */
-
-.vault-container {
-    margin: 15% 200px 200px;
-    /* display: grid; */
-    height: 45%;
-    width: 70%;
-    /* background-color: gray; */
-    color: white;
+.mem-grid-child {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
     justify-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.01);
 }
 
-#vault-title-head {
-    text-align: center;
-    font-family: Daniel Jaques;
-    font-size: 10em;
-    letter-spacing: 0.15em;
+.mem-grid-child img {
+    transition: 1s;
+    margin-top: 10vh;
+    width: 400px;
+    height: 252px;
+    border-radius: 2%;
 }
 
-#vault-title-sub {
-    text-align: center;
-    font-family: Sans Mateo;
-    font-size: 3em;
+.mem-grid-child img:hover {
+    transition: 1s;
+    margin-top: 10vh;
+    width: 600px;
+    height: 378px;
 }
-
-#vault-menu {
-    display: flex;
-    justify-content: center;
-}
-
-.vault-menu-item {
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    font-family: Sans Mateo;
-    font-size: 2em;
-    margin-left: 0.7em;
-    margin-right: 0.7em;
-    color: rgba(255, 255, 255, 0.773);
-}
-
-.vault-menu-item:visited, .vault-menu-item:active {
-    color: white;
-}
-
-.vault-menu-item:hover {
-    color: white;
-    transition: 0.5s;
-    cursor: pointer;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.393), 0 0 20px rgba(255, 255, 255, 0), 0 0 30px #fffefea3, 0 0 40px #ffffff66, 0 0 50px #ffffff12, 0 0 60px #ffffff66, 0 0 70px #ffffffb5;
-}
-
 
 .scroll-div {
     margin-top: 1%;
@@ -361,17 +293,4 @@ hr {
     font-family: sans-serif;
     font-size: 30px;
     padding: 20px;
-}
-
-
-
-
-.live-regime-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height: 83vh;
-    width: 87vw;
-    border: solid 2px white;
-    border-radius: 20px;
 }

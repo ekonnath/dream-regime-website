@@ -95,7 +95,6 @@ a {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     border-radius: 2%;
-    
 }
 
 .mem-child {
@@ -116,23 +115,39 @@ a {
     background-size: cover;
 }
 
-.mem-child img {
-    transition: 1s;
-    margin-top: 45%;
-    width: 500px;
-    height: 315px;
-    border-radius: 2%;
-}
-
-.mem-child img:hover {
-    transition: 1s;
-    margin-top: 5vh;
-    width: 950px;
-    height: 598px;
-}
-
-
 .mem-base {
     background-image: url(../images/members2.jpg);
     background-size: cover;
 }
+
+
+.mem-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+}
+
+.mem-grid-child {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.mem-grid-child img {
+    transition: 1s;
+    margin-top: 10vh;
+    width: 400px;
+    height: 252px;
+    border-radius: 2%;
+}
+
+.mem-grid-child img:hover {
+    transition: 1s;
+    margin-top: 10vh;
+    width: 600px;
+    height: 378px;
+}
+
