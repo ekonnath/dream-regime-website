@@ -203,69 +203,73 @@ hr {
 
 /*NEW MEMBERS CODE*/
 #mem {
-    background-color: black;
+    background-image: url(../images/members2.jpg);
+    background-size: cover;
 }
 
 .mem-wrapper {
     display: flex;
-    border-top: solid rgb(210, 210, 210) 2px;
+    /* border-top: solid rgb(210, 210, 210) 2px;
     border-left: solid rgb(210, 210, 210) 2px;
     border-right: solid rgb(210, 210, 210) 2px;
-    border-radius: 2%;
-    margin-top: 6px;
-
+    border-radius: 2%; */
+    /* margin-top: 6px; */
+    flex-direction: column;
 }
 
 .mem-container {
     flex-basis: 100%;
-    max-height: 100vh;
+    max-height: 97vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    border-radius: 2%;
+
+    
+    /* border-radius: 2%; */
 }
 
 .mem-child {
     scroll-snap-align: start;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     font-size: 1.4rem;
-    color: rgba(rgb(0, 0, 0), .5);
-    background: rgb(0, 0, 0);
+    /* color: rgba(rgb(0, 0, 0), .5);
+    background: rgb(0, 0, 0); */
     text-align: center;
     scroll-snap-align: start;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    height: 100vh;
+    height: 95vh; /*How close the cards are to the top*/
     display: grid;
-    border-radius: 2%;
-    background-image: url(../images/vault-background.png);
-    background-size: cover;
+    /* border-radius: 2%; */
+    /* background-image: url(../images/vault-background.png);
+    background-size: cover; */
 }
 
 .mem-base {
-    background-image: url(../images/members2.jpg);
-    background-size: cover;
+
+    /* background-image: url(../images/members2.jpg);
+    background-size: cover; */
 }
 
 
 .mem-grid {
     display: grid;
     grid-template-columns: auto auto;
-    width: 100vw;
+    width: 80vw;
+
 }
 
 .mem-grid-child {
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 30px;
     text-align: center;
     justify-items: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.01);
+    margin: 1%;
 }
 
 .mem-grid-child img {
     transition: 1s;
-    margin-top: 10vh;
     width: 400px;
     height: 252px;
     border-radius: 2%;
@@ -273,16 +277,18 @@ hr {
 
 .mem-grid-child img:hover {
     transition: 1s;
-    margin-top: 10vh;
     width: 600px;
     height: 378px;
+    margin-bottom: 10%;
 }
+
+
+
 
 .scroll-div {
     margin-top: 1%;
     margin-bottom: 1%;
     width: 50%;
-    
     height: 95%;
     overflow: hidden;
     overflow-y: scroll;
