@@ -219,7 +219,7 @@ hr {
 
 .mem-container {
     flex-basis: 100%;
-    max-height: 97vh;
+    max-height: 98vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 
@@ -256,7 +256,7 @@ hr {
     display: grid;
     grid-template-columns: auto auto;
     width: 80vw;
-
+    padding-top: 10%;
 }
 
 .mem-grid-child {
@@ -282,20 +282,30 @@ hr {
     margin-bottom: 10%;
 }
 
+/* VAULT CODE */
 
-
+#vault {
+    /* background-image: url("../images/vault-background.png");
+    background-size: cover; */
+    background-color: black;
+}
 
 .scroll-div {
     margin-top: 1%;
     margin-bottom: 1%;
+    min-width: 700px;
     width: 50%;
+    min-height: 500px;
     height: 95%;
+
+    border-radius: 5px;
     overflow: hidden;
     overflow-y: scroll;
+    /* background-color: rgba(255, 255, 255, 0.281); */
 }
 
 .scroll-object {
-    color: white;
+    color: black;
     font-family: sans-serif;
     font-size: 30px;
     padding: 20px;
