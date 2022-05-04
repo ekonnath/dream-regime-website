@@ -31,28 +31,6 @@ body {
     flex-direction: column;
 }
 
-#members {
-    background-image: url(../images/members.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    max-height: 100vh;
-    margin:auto;
-}
-
-#vault {
-    /* background-image: url(../images/vault-background.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: black;
-}
-
-#inquiry {
-    background-image: url(../images/vault-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 video {
     object-fit: cover;
     width: 100vw;
@@ -82,7 +60,6 @@ a {
     margin-left: 4px;
     margin-right: 4px;
     text-align: center;
-    /* color: white; */
 }
 
 /* all navbar items besides the logo */
@@ -149,6 +126,40 @@ hr {
     justify-content: center;
 }
 
+#egg1 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+#egg2 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+#egg3 {
+    position: absolute;
+    top: 100px;
+    right: 300px;
+}
+
+#egg4 {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+
+#egg5 {
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+}
+
+.record-egg {
+    cursor: pointer;
+}
+
 /* home.html social media footer */
 #social-media-icons {
     display: flex;
@@ -179,27 +190,6 @@ hr {
     cursor: pointer;
 }
 
-.inquiry-container {
-    margin: 5% 200px 200px;
-    display: grid;
-    height: 65%;
-    width: 70%;
-    background-color: rgba(128, 128, 128, 0.389);
-    color: white;
-    justify-items: center;
-}
-
-.inquiry-title {
-    font-family: Daniel Jaques;
-    font-size: 4em;
-    color: white;
-}
-
-.inquiry-subtitle {
-    font-family: Sans Mateo;
-    font-size: 2em;
-    color: white;
-}
 
 /*NEW MEMBERS CODE*/
 #mem {
@@ -217,6 +207,7 @@ hr {
     max-height: 98vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    border-radius: 10px;
 }
 
 .mem-child {
@@ -229,7 +220,6 @@ hr {
     justify-content: center;
     height: 95vh; /*How close the cards are to the top*/
     display: grid;
-    /* background-color: #fffefea3; */
     border-bottom: solid black 1px;
     z-index: -1;
     display: grid;
@@ -275,11 +265,9 @@ hr {
 }
 
 .mem-back-img {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 #aidan-bio.mem-child::before {
@@ -329,11 +317,9 @@ hr {
     left: 0px;
     opacity: 0.85;
 }
-/* VAULT CODE */
 
+/* VAULT CODE */
 #vault {
-    /* background-image: url("../images/vault-background.png");
-    background-size: cover; */
     background-color: black;
 }
 
@@ -344,11 +330,9 @@ hr {
     width: 50%;
     min-height: 500px;
     height: 95%;
-
     border-radius: 5px;
     overflow: hidden;
     overflow-y: scroll;
-    /* background-color: rgba(255, 255, 255, 0.281); */
 }
 
 .scroll-object {
