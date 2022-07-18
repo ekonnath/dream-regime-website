@@ -100,6 +100,7 @@ a {
 .footer {
     margin-top: auto; /* Ensures footer stays at the bottom of page */
     justify-content: center;
+    bottom: 0;
 }
 
 .footer-container {
@@ -193,129 +194,55 @@ hr {
 
 /*NEW MEMBERS CODE*/
 #mem {
-    background-image: url(../images/members2.jpg);
-    background-size: cover;
+    /* background-image: url(../images/members/members2.JPG);
+    background-size: cover; */
 }
 
-.mem-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.mem-container {
-    flex-basis: 100%;
-    max-height: 98vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    border-radius: 10px;
-}
-
-.mem-child {
-    scroll-snap-align: start;
-    font-size: 1.4rem;
-    text-align: center;
-    scroll-snap-align: start;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    height: 95vh; /*How close the cards are to the top*/
-    display: grid;
-    border-bottom: solid black 1px;
+#mem-background {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: -1;
+}
+
+.mem-names {
     display: grid;
-    grid-template-columns: 30% 70%;
-    position: relative;
-}
-
-.mem-base {
-    background-color: #fffefe00;
-}
-
-.mem-photo {
-    padding-top: 10%;
-    padding-left: 5%;
-}
-.mem-img {
-    height: auto;
-    width: 90%;
-    border-radius: 10px;
-    border: white solid 1px;
-    position: relative;
+    width: 100%;
+    grid-auto-flow: column;
+    justify-content: center;
 }
 
 .mem-name {
-    padding-top: 3.5%;
-    font-family: Daniel Jaques;
-    font-size: 4em;
-    text-transform: uppercase;
-    text-align: left;
-    margin-left: 3%;
-    color: white;
-    position: relative;
-}
-
-.mem-info {
-    text-align: left;
+    transition: .5s;
+    font-size: 18px;
     font-family: Sans Mateo;
-    font-size: .7em;
-    margin-left: 3%;
-    color: white;
-    z-index: 20;
-    position: relative;
+    margin: 8px;
+    color:rgba(255, 255, 255, 0.427);
+    cursor: pointer;
 }
 
-.mem-back-img {
+.mem-name:hover {
+    transition: 0.45s;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.mem-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
 }
 
-#aidan-bio.mem-child::before {
-    content: "";
-    background-image: url('../images/vault/bbar3.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.85;
-}
-
-#colin-bio.mem-child::before {
-    content: "";
-    background-image: url('../images/vault/bbar2.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.85;
-}
-
-#erik-bio.mem-child::before {
-    content: "";
-    background-image: url('../images/vault/bbar5.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.85;
-}
-
-#jason-bio.mem-child::before {
-    content: "";
-    background-image: url('../images/vault/bbar4.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.85;
+.mem-footer-icon {
+    margin: 8px;
 }
 
 /* VAULT CODE */
