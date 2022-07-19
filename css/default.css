@@ -213,6 +213,7 @@ hr {
     width: 100%;
     grid-auto-flow: column;
     justify-content: center;
+    margin-top: 16px
 }
 
 .mem-name {

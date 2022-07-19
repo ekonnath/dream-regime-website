@@ -12,7 +12,6 @@ class Egg {
 }
 
 let page = getPage(location.pathname);
-console.log('You are located on the ' + page + ' page.');
 
 const eggObjects = hatchEggs(); // egg objects
 
@@ -21,16 +20,18 @@ if (isSessionNew()) {
 }
 const eggCarton = findEggLocations(); // array of id's of all egg locations on page
 
-refreshEggStorage(eggObjects);
-refreshEggProgress(eggObjects);
-displayEggToPage(eggCarton, eggObjects);
+if (page != 'members') {
+    refreshEggStorage(eggObjects);
+    refreshEggProgress(eggObjects);
+    displayEggToPage(eggCarton, eggObjects);
+}
+
 
 /* FUNCTIONS START HERE */
 
 // get page
 function getPage(path) {
     let page = path.substring((path.indexOf('.io') + 3));
-    // console.log("Pre page: " + page);
 
     if ((page == '/' || page == 'index') || 
         (page == '' || page == '/index.html')
@@ -131,7 +132,6 @@ function refreshEggProgress() {
         }
     }
     if (foundEggs == 5) {
-        console.log("All Eggs found!");
         const secretLink = document.getElementById("secret-link");
         secretLink.setAttribute("href", "https://soundcloud.com/dream-regime");
         secretLink.setAttribute("target", "_blank");
@@ -168,7 +168,6 @@ function displayEggToPage() {
 
 function eggClick(evt) {
     let id = evt.currentTarget.myParam;
-    console.log(id + ' found!');
     document.getElementById(id).remove();
     sessionStorage.setItem(id, 'f'); 
     
@@ -191,7 +190,6 @@ function findEggLocations() {
         return eggCarton; // returns id's of all eggs on page
 
     } else {
-        console.log('No eggs found');
         return eggCarton;
     }
 }
