@@ -20,11 +20,11 @@ if (isSessionNew()) {
 }
 const eggCarton = findEggLocations(); // array of id's of all egg locations on page
 
-if (page != 'members') {
+
     refreshEggStorage(eggObjects);
     refreshEggProgress(eggObjects);
     displayEggToPage(eggCarton, eggObjects);
-}
+
 
 
 /* FUNCTIONS START HERE */
