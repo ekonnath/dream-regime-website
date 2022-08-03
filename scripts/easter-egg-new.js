@@ -133,7 +133,7 @@ function refreshEggProgress() {
     }
     if (foundEggs == 5) {
         const secretLink = document.getElementById("secret-link");
-        secretLink.setAttribute("href", "https://soundcloud.com/dream-regime");
+        secretLink.setAttribute("href", "https://soundcloud.com/dream-regime/raisin-remix/s-ODC1EJOyXPG?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing");
         secretLink.setAttribute("target", "_blank");
     }
 }
